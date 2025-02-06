@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio Yassine Frikha </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main
+    <section id="about">
+        <h2>About Me</h2>
+        <h4>Yassine Frikha</h4>
+        <p>I am a FSEG student of Tunis and I have a certificate in web development</p>
+        <img src="IMG_Sfax.jpg" alt="profile" height="300px" width="300px">
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+    <section id="work">
+        <h2>My experience</h2>
+        <p>Here are my recent Activities</p>
+        <ul>
+            <li>Certificate 1: Certificate in music as a violinist</li>
+            <li>Certificate 2: In the progress of learning web development</li>
+        </ul>
+        <video controls width="400">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+    </section>
+    <section id="resume">
+        <h2>Resume</h2>
+        <table>
+            <!-- ligne 1 -->
+            <tr>
+                <th>Year</th>
+                <th>Certificate</th>
+                <th>Activity</th>
+            </tr>
+            <!-- ligne 2 -->
+            <tr>
+                <td>2019-2020</td>
+                <td>Music</td>
+                <td>violinist</td>
+            </tr>
+        </table>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="/submit" method="post">
+
+            <!-- Champ de texte pour le nom (type text) -->
+            <div>
+                <label for="name">Name :</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <br> <!-- retourne a la ligne -->
+
+            <!-- Champ pour l'email (type email)-->
+            <div>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <br>
+
+            <!-- Champ pour le mot de passe (type password) -->
+            <div>
+                <label for="password">Password :</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <br>
+
+            <!-- Champ pour l'age (type number) -->
+            <div>
+                <label for="age">Age :</label>
+                <input type="number" id="age" name="age" min="1" max="120">
+            </div>
+            <br>
+
+            <!-- Champ pour la date de naissance (type date) -->
+            <div>
+                <label for="birthdate">Date of birth :</label>
+                <input type="date" id="birthdate" name="birthdate">
+            </div>
+            <br>
+            <!-- Case a cocher pour s'abonner a un service LinkedIn (type checkbox) -->
+            <div>
+                <label for="newsletter">live in Greater Tunis or Sfax :</label>
+                <input type="checkbox" id="newsletter" name="linkedin">
+            </div>
+            <br>
+
+            <!-- Boutons radio pour choisir le genre -->
+            <div>
+                <p>Genre :</p>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="female">
+            </div>
+            <br>
+
+            <!-- Liste deroulante pour choisir le pays -->
+            <div>
+                <label for="State">State</label>
+                <select id="State" name="State">
+                    <option value="tunis">Tunis</option>
+                    <option value="ariana">Ariana</option>
+                    <option value="manouba">Manouba</option>
+                    <option value="ben arous">Ben Arous</option>
+                    <option value="sfax">Sfax</option>
+                </select><br>
+            </div>
+            <br>
+            <!-- Zone de texte pour saisir un message -->
+            <div>
+
+                <label for="message">Message :</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+            </div>
+
+            <!-- Boutons pour soumettre ou reinitialiser le formulaire -->
+            <div>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Cancel</button>
+            </div>
+        </form>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    <!-- Lien pour revenir en haut de la page -->
+    <p><a href="#home">Back to top ( Home section )</a></p>
+</footer>
+</body>
+
+</html>
